@@ -1,0 +1,386 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 22vw;
+}
+.logo{
+    color: #6d48e5;
+}
+
+a{
+    text-decoration: none;
+}
+.navigation a:hover{
+    color: #6d48e5;
+}
+.navigation{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    width: 30vw;
+}
+.link-color{
+    color: rgb(106, 105, 105);
+}
+
+.signin{
+    background-color: #6d48e5;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    
+}
+.signin:hover{
+    background-color: white;
+    border-radius: 6px ;
+    color: #6d48e5;
+    border: #6d48e5 solid 2px;
+}
+.menu-icon {
+    display: none;
+    font-size: 20px;
+    color: #6d48e5;
+}
+.check {
+    display: none;
+}
+
+@media (max-width: 426px) {
+    .navigation{
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40vh;
+        width: 50%; 
+        top: 8vh;
+        right: -50vw; 
+        transition:  .5s;
+    }
+    .check:checked ~ .navigation {
+        right: 0;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+}
+/* main */
+main{
+    margin-top: 30px;
+}
+.section-one{
+    text-align: center;
+}
+.hola{
+    color: rgb(59, 59, 59) ;
+}
+.hello{
+    margin-top: 20px;
+    color: rgb(106, 105, 105) ;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.btn-register {
+    display: inline-block;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 2px;
+    margin: 25px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #6d48e5;
+    color: white;
+    border-radius: 4px;
+}
+.btn-register:hover{
+    background-color: white;
+    border-radius: 6px ;
+    color: #6d48e5;
+    border: #6d48e5 solid 2px;
+}
+.sponsors-list{
+    padding-inline: 23vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sponsors-list img:hover{
+    opacity: 1;
+}
+.img-sponsor{
+    width: 100px; 
+    height: 30px;
+    opacity: 0.4;
+}
+/* Youssef's part */
+.section_two{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-inline: 16vw;
+    gap: 70px 70px;
+    background-color: #f6f6fd;
+    padding-bottom: 20vh;
+}
+
+.section_title{
+    margin-top: 10vh;
+    grid-area: 1 / 1 /span 1 / span 3 ;
+    text-align: center;
+}
+.section_title h2{
+    margin-bottom: 3vh;
+    font-size: 22px;
+
+}
+.section_title p{
+    opacity: .6;
+    font-size: 14px;
+}
+
+.feature-list{
+    text-align: center;
+    display: grid;
+    justify-content: space-around;
+    height: 30vh;
+}
+.card-img{
+    font-size: 35px;
+}
+.card-img img{
+    background-color: #ece7fe;
+    border-radius: 50%;
+    width: 34px;
+    padding: 1.3vh 0.7vw;
+}
+.card-text p{
+    margin-top: 3vh;
+    opacity: .6;
+}
+.card-text h3{
+    opacity: .8;
+    font-weight: lighter;
+}
+
+
+.section_three{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 16vw;
+    padding-bottom: 20vh;
+}
+
+.state1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.stat-img img{
+    width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.stat-text {
+    width: 17vw;
+}
+
+.stat-text h2,p,a{
+    margin-bottom: 3vh;
+}
+.stat-text h2{
+    font-weight: lighter;
+}
+.stat-text p{
+    opacity: 0.7;
+}
+.stat-text a{
+    opacity: 0.6;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+
+.stat-text a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    height: 2px;
+    width: 50px;
+    background: #8798ab;
+    transition: 0.3s;
+}
+.stat-text a:hover::after{
+    width: 100%;
+}
+
+.state2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* part saad  */
+
+/* violet part */
+.violet {
+    background-color: #704ce4;
+    height: 400px;
+    display: block;
+    align-items: center;
+    align-content: center;
+    padding: 80px 0;
+    padding-inline: 15vw;
+}
+
+b {
+    margin-left: 40px;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'SF Pro Display', sans-serif;
+
+}
+
+.les_statistiques {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 20px;
+}
+.les_statistiques div h1 b{
+    
+}
+.link_in_purplediv {
+    color: white;
+    align-self: center;
+}
+
+.purplediv {
+    align-items: center;
+    align-self: center;
+    margin: auto;
+    display: flex;
+    width: fit-content;
+}
+
+/* first section */
+
+.simopart1 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    padding: 50px
+
+}
+
+.icons1{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50%;
+    text-decoration: none;
+    color: black;
+}
+.ico1{
+    font-size: 20px;
+    color: gray;
+    background-color: brown;
+    border-radius: 50%;
+}
+.ico2{
+    font-size: 20px;
+    color: brown;
+    border-radius: 50%;
+}
+.ico3{
+    font-size: 20px;
+    color: rgb(255, 217, 0);
+    border-radius: 50%;
+}
+.p1{
+    margin-left: 10%;
+    color: grey;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+}
+/* second section */
+
+.second-section{
+    height: 50vh;
+    background-color:#f6f6fd;
+    padding-top: 10vh;
+
+}
+.input_button{
+    text-align: center;
+
+}
+
+input{
+    width: 22vw;
+    height: 5vh;
+    border: #704ce4 solid ;
+    text-align:center;
+}
+
+.last-button{
+    background-color: #704ce4;
+    color: white;
+    width: 22vw;
+    height: 5vh;
+}
+
+.last-ligne{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+    padding-inline: 13vw;
+}
+.footer-links{
+    margin-top: 3.5vh;
+}
+
+
+a{
+    text-decoration: none;
+}
