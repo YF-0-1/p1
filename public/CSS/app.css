@@ -424,21 +424,18 @@ button:hover {
 }
 
 
-
-
 @media (max-width: 426px) {
     .navbar{
-        padding-inline: 15vw;
+        padding-inline: 17vw;
     }
     .navigation{
         position: fixed;
         flex-direction: column;
-        padding-inline: -40vw;
-        width: 85vh;
+        align-items: ;        
+        width: 100vw;
         top: -40vh;
         height: 40vw; 
         left: 0;
-        right: 0;
         transition:  .5s;
         background-color: white;
     }
